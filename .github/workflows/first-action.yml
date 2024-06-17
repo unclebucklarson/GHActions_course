@@ -8,8 +8,10 @@ jobs:
       - name: Print Greeting
         run: |
           echo "Hello World"
-          echo $date
-          echo $pwd
+          current_date=$(date +"%Y-%m-%d")
+          echo "Current date: $current_date"
+          cur_path=$(pwd)
+          echo "Current path: $cur_path"
       - name: Print Goodbye
         run: echo "Done - bye"
         
