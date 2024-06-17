@@ -8,8 +8,8 @@ jobs:
       - name: Print Greeting
         run: |
           echo "Hello World"
-          echo date
-          echo pwd
+          echo $date
+          echo $pwd
       - name: Print Goodbye
         run: echo "Done - bye"
         
